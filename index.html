@@ -10,17 +10,160 @@
 
 <header>
     <h3>IXD PROJECT - 2026</h3>
-    <h1>Interaction Design Report: STARS Flows</h1>
+    <h1 class="White">Interaction Design Report: STARS Flows</h1>
     <h3 class="Gray">Student: Daniele Ratiu | App: Stars SRL Project | Flows: Creating a brief & Editing a brief</h3>
+    <a href="#intro" class="link">Intro</a>
+    <a href="#flow-analysis" class="link">User & Task Analysis</a>
+    <a href="#interface-evaluation" class="link">Interface Evaluation</a>
+    <a href="#design-proposal" class="link">Design Proposal</a>
+    <a href="#prototype" class="link">Prototype</a>
+    <a href="#user-testing" class="link">User Testing</a>
+    <a href="#reflection" class="link">Reflection</a>
 </header>
 
+<section class="container" id="intro">
+    <h3>Section 1</h3>
+    <h1>Introduction</h1>
 
-<section2>
+    <h2>About the App</h2>
+    <p><strong>Stars SRL Project</strong> is a web-based application designed to facilitate project management and collaboration for students and teachers. The app allows users to create, edit, and manage project briefs, which outline the requirements and expectations for various assignments.</p>
+
+    <h2>Assigned Flows</h2>
+    <p>For this report, I have chosen to analyze two key flows within the Stars SRL Project app: <strong>Creating a Brief</strong> and <strong>Editing a Brief</strong>. These flows are essential for both students and teachers as they involve the core functionality of defining and updating project requirements. By examining these flows, I aim to identify pain points and areas for improvement in the user experience.</p>
+
+    <h2>Why these flows?</h2>
+    <p>These flows were chosen because they represent fundamental interactions that users have with the app, and they directly impact the efficiency and effectiveness of project management. Understanding the user journey through these flows will help in identifying opportunities for enhancing the overall user experience.</p>
+</section>
+
+
+<section class="container" id="flow-analysis">
     <h3>Section 2</h3>
-    <h2>| Flow 1 - Creating A Brief</h2>
-    <h2>| Flow 2 - Editing A Brief</h2>
-</section2>
 
-</body>
+    <h1>User & Task Analysis</h1>
 
-</html>
+    <h2>Flow 1 — Overview</h2>
+    <table border="1">
+        <tr><th>Flow name</th><td>Creating a Brief</td></tr>
+        <tr><th>User role</th><td>Student / Teacher</td></tr>
+        <tr><th>Trigger (why does the user start this?)</th><td>Need to define a new project and share requirements with the students.</td></tr>
+        <tr><th>End state (what does success look like?)</th><td>Brief is created with all required details and submitted for review.</td></tr>
+    </table>
+
+    <p><strong>Flow Summary </strong> - Flow 1 describes the process of creating a new brief as a teacher, which is a document that outlines the requirements and expectations for a project. The user starts this flow when they need to define a new project and share the requirements with their team. Success in this flow is achieved when the brief is created with all the necessary details and submitted for review.</p>
+
+    <table border="1">
+        <tr><th>#</th><th>User Action</th><th>System Response</th><th>User's Goal</th><th>Pain Point / Issue?</th></tr>
+        <tr><td>1</td><td>Navigate to the "All Briefs" page.</td><td>The system displays a list of existing briefs and a "Create a new Brief" button.</td><td>Reach the starting point for creating a new brief.</td><td>The list can be long; the button may be easy to miss.</td></tr>
+        <tr><td>2</td><td>Click the "Create a new Brief" button.</td><td>The system opens the brief editor with "Brief Title: Untitled Brief" and the accept link visible.</td><td>Begin composing a new brief.</td><td>The create button may be hard to spot if the layout changes.</td></tr>
+        <tr><td>3</td><td>Add text to the brief description in the editor.</td><td>The editor updates the preview and saves a draft state.</td><td>Capture the brief instructions and context clearly.</td><td>It can be hard to know what to write or how much detail is needed.</td></tr>
+        <tr><td>4</td><td>Apply text styling (e.g., bold) using the editor toolbar.</td><td>The editor applies the formatting and updates the displayed text.</td><td>Make important information stand out.</td><td>Toolbar icons may be unclear; formatting might not apply as expected.</td></tr>
+        <tr><td>5</td><td>Insert an image into the brief content.</td><td>The image appears inline and is saved with the brief.</td><td>Provide visual examples or supporting material.</td><td>It can be hard to know how to upload the image.</td></tr>
+        <tr><td>6</td><td>Add a hyperlink using the editor's link tool.</td><td>The link is embedded in the text and becomes clickable.</td><td>Supply references or resources directly in the brief.</td><td>Users may not realize how to add or edit links.</td></tr>
+        <tr><td>7</td><td>Expand "Assignment Aspects" by clicking "Edit Mode" and add aspects.</td><td>The section expands and allows entry of assessment criteria.</td><td>Define what students should achieve in the brief.</td><td>The edit mode can feel hidden and hard to locate.</td></tr>
+        <tr><td>8</td><td>Toggle "Allow students to modify their checklist."</td><td>The checkbox updates permissions and saves the setting.</td><td>Enable or restrict student checklist editing.</td><td>Unclear what the permission change affects.</td></tr>
+    </table>
+
+    <h2>Flow 2 — Overview</h2>
+    <table border="1">
+        <tr><th>Flow name</th><td>Editing a Brief</td></tr>
+        <tr><th>User role</th><td>Student / Teacher</td></tr>
+        <tr><th>Trigger (why does the user start this?)</th><td>Need to update or correct information in an existing brief.</td></tr>
+        <tr><th>End state (what does success look like?)</th><td>Brief is updated, saved, and re-submitted if required.</td></tr>
+    </table>
+
+    <p><strong>Flow Summary </strong> - Flow 2 outlines the process of editing an existing brief as a teacher, which is necessary when updates or corrections are needed. The user initiates this flow when they need to modify the content of a brief that has already been created. Success in this flow is achieved when the brief is updated with the new information, saved properly, and re-submitted if necessary.</p>
+
+    <table border="1">
+        <tr><th>#</th><th>User Action</th><th>System Response</th><th>User's Goal</th><th>Pain Point / Issue?</th></tr>
+        <tr><td>1</td><td>Go to the "All Briefs" tab in the top navigation.</td><td>System shows a list of briefs with "View/Edit Brief" buttons.</td><td>Locate the brief you need to update.</td><td>Finding the right brief can be difficult when there are many.</td></tr>
+        <tr><td>2</td><td>Click "View/Edit Brief" on the target brief.</td><td>The system opens the brief editor populated with the current brief details.</td><td>Enter edit mode for an existing brief.</td><td>Buttons may be hard to spot or unclear.</td></tr>
+        <tr><td>3</td><td>Change text in the brief description.</td><td>The editor updates the preview and marks the brief as modified.</td><td>Update instructions or clarify content.</td><td>It can be hard to tell if changes are saved.</td></tr>
+        <tr><td>4</td><td>Use the editor toolbar to format text (e.g., bold).</td><td>The selected text updates with the chosen formatting.</td><td>Emphasise important information.</td><td>Formatting options may not be obvious.</td></tr>
+        <tr><td>5</td><td>Add or replace an image within the brief content.</td><td>The image appears in place and is saved with the brief.</td><td>Provide visual guidance or examples.</td><td>It can be difficult to change the image link that is already inserted.</td></tr>
+        <tr><td>6</td><td>Add a link using the editor’s link tool.</td><td>The link becomes clickable in the brief content.</td><td>Connect to external resources or documents.</td><td>Link editing may be confusing or unintuitive.</td></tr>
+        <tr><td>7</td><td>Click "Edit Mode" in the Assignment Aspects section and update aspects.</td><td>The section expands and saves changes as you type.</td><td>Adjust assessment criteria to match new requirements.</td><td>It can be unclear which changes require saving.</td></tr>
+        <tr><td>8</td><td>Toggle "Allow students to modify their checklist" as needed.</td><td>The setting is applied and the brief updates.</td><td>Control whether students can change their checklist items.</td><td>It may not be clear what impact the toggle has on student behavior.</td></tr>
+    </table>
+
+    <h2>Pain Point Log</h2>
+
+
+    <table border="1">
+        <tr><th>#</th><th>Flow</th><th>Where in the flow? (step/screen)</th><th>What happened?</th><th>Why is this a problem?</th><th>Severity</th></tr>
+        <tr><td>1</td><td>Flow 1</td><td>Step 1 - Locate Brief</td><td>The create brief button can be hard to spot.</td><td>This is a problem because users may not find it easily.</td><td>Medium</td></tr>
+        <tr><td>2</td><td>Flow 2</td><td>Step 2 - View/Edit Brief</td><td>Buttons may be hard to spot or unclear.</td><td>This is a problem because users may not find the edit options easily.</td><td>Medium</td></tr>
+        <tr><td>3</td><td>Flow 2</td><td>Step 3 - Edit Brief</td><td>It can be hard to tell if changes are saved.</td><td>This is a problem because users may lose their work.</td><td>High</td></tr>
+        <tr><td>4</td><td>Flow 1</td><td>Step 4 - Format Text</td><td>Formatting options may not be obvious.</td><td>This is a problem because users may not know how to format their text.</td><td>Low</td></tr>
+        <tr><td>5</td><td>Flow 2</td><td>Step 5 - Add Image</td><td>The image link is hard to change.</td><td>This is a problem because users may not be able to update their images.</td><td>Low</td></tr>
+        <tr><td>6</td><td>Flow 2</td><td>Step 6 - Add Link</td><td>The link editing is confusing.</td><td>This is a problem because users may not be able to create or edit links correctly.</td><td>Low</td></tr>
+        <tr><td>7</td><td>Flow 1</td><td>Step 7 - Update Assignment Aspects</td><td>The assignment aspects are hard to update.</td><td>This is a problem because users may not be able to modify the assessment criteria.</td><td>Medium</td></tr>
+        <tr><td>8</td><td>Flow 2</td><td>Step 8 - Update Assignment Aspects</td><td>The assignment aspects are hard to update.</td><td>This is a problem because users may not be able to modify the assessment criteria.</td><td>Medium</td></tr>
+        <tr><td>9</td><td>Flow 1</td><td>Step 9 - Toggle Student Checklist Modification</td><td>The toggle is hard to find.</td><td>This is a problem because users may not be able to control student access to the checklist.</td><td>High</td></tr>
+        <tr><td>10</td><td>Flow 1</td><td>Step 10 - Save Changes</td><td>The save button is hard to find.</td><td>This is a problem because users may not be able to save their changes.</td><td>High</td></tr>
+    </table>
+
+    <section class="inner-container">
+    <p><strong>Top 3 Pain Points</strong></p>
+    <ol>
+        <li><strong>Saving Changes</strong> - The save button is hard to find, which can lead to users losing their work if they cannot save their changes. This violates the error prevention heuristic.</li>
+        <li><strong>Locating the Create/Edit Buttons</strong> - The buttons for creating and editing briefs can be hard to spot, which can hinder users from starting or modifying their briefs effectively. This violates the consistency and standards heuristic.</li>
+        <li><strong>Updating Assignment Aspects</strong> - The process for updating assignment aspects is not intuitive, making it difficult for users to modify assessment criteria as needed. This violates the recognition rather than recall heuristic.</li>
+    </ol>
+    </section>
+
+</section>
+
+<section class="container" id="interface-evaluation">
+    <h3>Section 3</h3>
+    <h1>Interface Evaluation</h1>
+
+    <h2>Pain Points Mapped to Heuristics</h2>
+    <table border="1">
+        <tr><th>Pain Point</th><th>Heuristic Violated</th><th>Explanation</th></tr>
+        <tr><td>Saving Changes</td><td>Error Prevention</td><td>The save button is hard to find, which can lead to users losing their work if they cannot save their changes.</td></tr>
+        <tr><td>Locating the Create/Edit Buttons</td><td>Consistency and Standards</td><td>The buttons for creating and editing briefs can be hard to spot, which can hinder users from starting or modifying their briefs effectively.</td></tr>
+        <tr><td>Updating Assignment Aspects</td><td>Recognition Rather than Recall</td><td>The process for updating assignment aspects is not intuitive, making it difficult for users to modify assessment criteria as needed.</td></tr>
+    </table>
+
+    <h2>Design Briefs</h2>
+
+    <section class="inner-container">
+        <h3>Design Brief 1</h3>
+        <p><strong>Issue:</strong> Users have difficulty finding the save button, which can lead to loss of work.</p>
+        <p><strong>Brief:</strong> Redesign the interface to make the save button more prominent and easily accessible. This could be as simple as changing its color or size.</p>
+    </section>
+
+     <section class="inner-container">
+        <h3>Design Brief 2</h3>
+        <p><strong>Issue:</strong> The create and edit buttons for briefs are not easily visible.</p>
+        <p><strong>Brief:</strong> Redesign the interface to make the create and edit buttons more prominent and easily accessible. This could be as simple as changing their color or size.</p>
+    </section>
+
+     <section class="inner-container">
+        <h3>Design Brief 3</h3>
+        <p><strong>Issue:</strong> The process for updating assignment aspects is not intuitive.</p>
+        <p><strong>Brief:</strong> Redesign the interface to make the update process more intuitive and user-friendly. This could involve simplifying the workflow or providing clearer instructions.</p>
+    </section>
+
+</section>
+
+<section class="container" id="design-proposal">
+    <h3>Section 4</h3>
+    <h1>Design Proposal</h1>
+</section>
+
+<section class="container" id="prototype">
+    <h3>Section 5</h3>
+    <h1>Prototype</h1>
+</section>
+
+<section class="container" id="user-testing">
+    <h3>Section 6</h3>
+    <h1>User Testing</h1>
+</section>
+
+<section class="container" id="reflection">
+    <h3>Section 7</h3>
+    <h1>Reflection</h1>
+</section>
+
