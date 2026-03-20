@@ -14,6 +14,10 @@ header{
   
 }
 
+.link{
+        color: aqua;
+}
+ 
 h3{
   color: rgb(0, 145, 230);
   
@@ -23,21 +27,36 @@ h3{
   color: rgb(175, 175, 175);
 }
 
+.White{
+        color: #ffffff;
+}
+
 h1{
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 h2{
   color: rgb(0, 49, 139);
 }
 
-.flow-container{
+.container{
         max-width: 900px;
         margin: 2rem auto;
         padding: 1.5rem;
         font-family: Arial, sans-serif;
         font-size: 0.85rem;
         background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.inner-container{
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        background: #abffed;
         border-radius: 10px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
@@ -59,13 +78,5 @@ th {
         background: #1f2a4d;
         color: #f4f6ff;
         font-weight: 600;
-}
-
-tbody tr:nth-child(odd) {
-        background: #f8fafc;
-}
-
-tbody tr:hover {
-        background: rgba(0, 0, 0, 0.03);
 }
 
